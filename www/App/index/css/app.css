@@ -1,0 +1,33 @@
+
+i.tabbar-demo-icon-1 {
+    width: 25px;
+    height: 25px;
+    background-image: url(../images/icon_gray_1.png);
+}
+.active i.tabbar-demo-icon-1 {
+    background-image: url(../images/nav_icon_1blue.png);
+}
+i.tabbar-demo-icon-2 {
+    width: 25px;
+    height: 25px;
+    background-image: url(../images/icon_gray_2.png);
+}
+.active i.tabbar-demo-icon-2 {
+    background-image: url(../images/nav_icon_2blue.png);
+}
+i.tabbar-demo-icon-3 {
+    width: 25px;
+    height: 25px;
+    background-image: url(../images/icon_gray_3.png);
+}
+.active i.tabbar-demo-icon-3 {
+    background-image: url(../images/nav_icon_3blue.png);
+}
+i.tabbar-demo-icon-4 {
+    width: 25px;
+    height: 25px;
+    background-image: url(../images/icon_gray_4.png);
+}
+.active i.tabbar-demo-icon-4 {
+    background-image: url(../images/nav_icon_4blue.png);
+}

@@ -82,4 +82,7 @@
 
 - (void)parseSettingsWithParser:(NSObject <NSXMLParserDelegate>*)delegate;
 
+//@朱志强
+- (void)loadSettings;
+
 @end

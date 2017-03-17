@@ -32,7 +32,10 @@
 
 - (BOOL)application:(UIApplication*)application didFinishLaunchingWithOptions:(NSDictionary*)launchOptions
 {
-    self.viewController = [[MainViewController alloc] init];
+    MainViewController *main = [[MainViewController alloc] init];
+    main.index = @"http://172.16.1.214:8080/H5Storage/www/";
+    self.viewController = main;
+    
     return [super application:application didFinishLaunchingWithOptions:launchOptions];
 }
 

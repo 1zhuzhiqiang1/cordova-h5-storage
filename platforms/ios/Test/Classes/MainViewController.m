@@ -41,16 +41,11 @@
     return self;
 }
 
-- (id)init
-{
-    self = [super init];
-    if (self) {
-        // Uncomment to override the CDVCommandDelegateImpl used
-        // _commandDelegate = [[MainCommandDelegate alloc] initWithViewController:self];
-        // Uncomment to override the CDVCommandQueue used
-        // _commandQueue = [[MainCommandQueue alloc] initWithViewController:self];
-    }
-    return self;
+-(void)loadSettings {
+    [super loadSettings];
+    
+    self.wwwFolderName = @"";
+    self.startPage = _index;
 }
 
 - (void)didReceiveMemoryWarning
@@ -77,6 +72,8 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    
+    self.navigationController.navigationBarHidden = YES;
 }
 
 - (void)viewDidUnload

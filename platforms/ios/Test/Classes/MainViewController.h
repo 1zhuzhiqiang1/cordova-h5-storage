@@ -31,6 +31,8 @@
 
 @interface MainViewController : CDVViewController
 
+@property (nonatomic, strong) NSString *index;
+
 @end
 
 @interface MainCommandDelegate : CDVCommandDelegateImpl

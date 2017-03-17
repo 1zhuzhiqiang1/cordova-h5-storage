@@ -23,6 +23,7 @@
         Apache Cordova Team
     </author>
     <content src="index.html" />
+    <allow-navigation href="*" />
     <access origin="*" />
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
@@ -45,4 +46,7 @@
     <preference name="PageLength" value="0" />
     <preference name="PaginationBreakingMode" value="page" />
     <preference name="PaginationMode" value="unpaginated" />
+    <feature name="AnywarePlugin">
+        <param name="ios-package" value="AnywarePlugin" />
+    </feature>
 </widget>

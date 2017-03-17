@@ -28,10 +28,25 @@ define(function () {
         });
     }
 
+    /**
+     * 获取数据库中所有的数据
+     */
+    function getLines() {
+        var lines = 0;
+        var db = createDB();
+        db.transaction(function (tx) {
+            tx.executeSql('SELECT * FROM LOGS', [], function (tx, results) {
+                lines = results.rows.length;
+            }, null);
+        });
+        return lines;
+    }
+
     return {
         createDB: createDB,
         execSql: execSql,
-        searchSql: searchSql
+        searchSql: searchSql,
+        getLines: getLines
     }
 
 });

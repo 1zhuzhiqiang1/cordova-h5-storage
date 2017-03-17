@@ -22,14 +22,14 @@ define(function () {
     var $$ = Dom7;
 
     var mainView = myApp.addView('.view-main', {
-        dynamicNavbar:true,//这个不加的话，导航栏上的标题不能显示
+        dynamicNavbar: true,//这个不加的话，导航栏上的标题不能显示
     });
 
     require(['App/index/js/index', 'App/splash/js/splash']);
 
     return {
         myApp: myApp,
-        router: mainView,
+        router: mainView.router,
         $$: $$
     };
 });

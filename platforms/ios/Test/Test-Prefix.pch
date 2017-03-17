@@ -23,4 +23,11 @@
 #ifdef __OBJC__
     #import <Foundation/Foundation.h>
     #import <UIKit/UIKit.h>
+
+#ifdef DEBUG
+#define MyLog(...) NSLog(__VA_ARGS__)
+#else
+#define MyLog(...)
+#endif
+
 #endif
